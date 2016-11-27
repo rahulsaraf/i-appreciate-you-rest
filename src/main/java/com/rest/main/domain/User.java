@@ -48,6 +48,26 @@ public class User {
 	@Column
 	private Date dateOfBirth;
 	
+	@Column
+	private String currentOrg;
+	
+	@Column
+	private String bgImageLink;
+	
+	@Column
+	private String sex;
+	
+	@Column
+	private String city;
+	
+	@Column
+	private String state;
+	
+	@Column
+	private String country;
+	
+	@Column
+	private int noOfConnections;
 
 	public long getUserId() {
 		return userId;
@@ -99,6 +119,66 @@ public class User {
 
 	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
+	}
+
+	public String getCurrentOrg() {
+		return currentOrg;
+	}
+
+	public void setCurrentOrg(String currentOrg) {
+		this.currentOrg = currentOrg;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
+	public String getBgImageLink() {
+		return bgImageLink;
+	}
+
+	public void setBgImageLink(String bgImageLink) {
+		this.bgImageLink = bgImageLink;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public int getNoOfConnections() {
+		return noOfConnections;
+	}
+
+	public void setNoOfConnections(int noOfConnections) {
+		this.noOfConnections = noOfConnections;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 	
 }
